@@ -8,3 +8,8 @@ puts "One type of food: #{first}"
 puts "Another type of food: #{second}"
 puts "Food, food, food: #{third}"
 puts "Anymore food?: #{fourth}"
+
+print "Is there another food you would like to add to the list?: "
+more_food = $stdin.gets.chomp
+
+puts "You have added #{more_food}"
