@@ -33,3 +33,6 @@ e = "a string with a right side."
 puts w + e
 
 #string interpolation doesn't work with single quotes
+
+#print doesn't seperate the code from the next piece of code. so whatever comes next is printed on the same line
+#whereas puts prints the code plus enters the next line of code on a new line.
