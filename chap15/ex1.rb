@@ -19,4 +19,5 @@ file_again = $stdin.gets.chomp
 txt_again = open(file_again)
 
 #prints out the contents of the new file
+#calling the method .read on the File (method belongs to the File class)
 print txt_again.read
