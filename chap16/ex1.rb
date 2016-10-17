@@ -28,12 +28,17 @@ line3 = $stdin.gets.chomp
 
 puts "I'm going to write these to the file."
 
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
+new_words = "#{line1}\n#{line2}\n#{line3}\n"
+
+target.write(new_words)
 
 puts "And finally, we close it."
 target.close
+
+puts "We want to read the new file to make sure the edits are there, so we open it again and read:"
+new_target = open(filename)
+
+print new_target.read
+
+puts "And then make sure to close it again"
+new_target.close
