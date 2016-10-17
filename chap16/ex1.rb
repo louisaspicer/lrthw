@@ -11,10 +11,13 @@ $stdin.gets
 
 puts "Opening the file..."
 #sets the open file as a writeable file as the variable target
+#need to explicitly say that we want to write the file.
+#{}"w"  Write-only, truncates existing file to zero length or creates a new file for writing.
 target = open(filename, 'w')
 
 puts "Truncating the file. Goodbye!"
 #trancate clears the file.
+#this is unnessary when 'w' is used
 target.truncate(0)
 
 puts "Now I'm going to ask you for three lines."
