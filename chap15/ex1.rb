@@ -9,15 +9,3 @@ txt = open(filename)
 puts "Here's your file #{filename}:"
 #prints out the txt files contents
 print txt.read
-
-#asks the user to give the filename again
-print "Type the filename again: "
-#gets input from user, has to use stdin as we also have used ARGV
-file_again = $stdin.gets.chomp
-
-#saves the open new file as a variable
-txt_again = open(file_again)
-
-#prints out the contents of the new file
-#calling the method .read on the File (method belongs to the File class)
-print txt_again.read
