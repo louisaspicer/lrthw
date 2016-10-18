@@ -1,0 +1,57 @@
+puts : prints out string with a newline
+print : prints out string without a newline
+# : octothorpe or pound character, turns line into comment, not read by Ruby
++ : calculates sum or adds strings together
+- : subtract
+/ : divide
+* : multiply - can also multiply strings
+% : modulus - divides by number then returns the remaining sum
+< : less-than - used to return boolean value true or false
+> : greater-than - used to retrun boolean value true or false
+<= : less-than-equal - returns true or false if either less than or equal to
+>= : greater-than-equal - returns true of false if either greater or equal.
+#{} : string interpolation, embeds variables, or calculations into string
+irb : interactive ruby shell, used to test out lines of code
+.to_f : method to change number to a floating point e.g 45.6
+PEMDAS : Parentheses Exponents Multiplication Division Addition Subtraction - order of operations
+variable : a name for something. give values names to use again. needs to start with a character
+string : usually a bit of test you want to display to someone, or "export" out of the program you are writing
+single-quoted strings : won't read string interpolation
+%{} : apply the same format to multiple values
+\n : newline
+""" : can type out as many lines of text as you want until """ again
+\\ : types backslash into string
+\' : types single quote into string if you're using a single-quoted string
+\" : same as above but for double-quoted strings
+\a : ASCII bell - alerts user, usually with a beep sound
+\b : ASCII backspace - deletes last character of string
+\f : a page-breaking ASCII control character
+\r : carriage Return - shifts to the beginning of line and overwrites the starting same number of characters as the characters that come after the /r
+\t : creates a tab
+\uxxxx :	Character with 16-bit hex value xxxx (Unicode only)
+\v	: ASCII vertical tab (VT) - creates a tab but puts it on the next line
+\ooo :	Character with octal value ooo - unsure when this would be used, need to come back to this. e.g. puts "\0377" => 7
+\xhh	Character with hex value hh - unsure when this would be used - need to come back to this. e.g. puts "\x54" = > T
+gets : takes input from user, returns with a newline
+gets.chomp : cuts off the newline character
+.chomp : use with a parameter to cut off characters of a string
+.to_i : converts string into integer
+ARGV : argument variable, arguments given when program is run, stores values in array which can be unpacked into variables
+$stdin : standard input - stream in which to get user input from (keyboard), has to be used if ARGV is used
+open() : opens a file, given in parameter so that it can be read or written over
+open(filename, 'w') : makes file writable, and truncates file
+.read : reads text file, contents can be printed
+.close : closes the file, files should be closed once done with
+.readline : reads just one line of a text file
+.truncate() : empties the file
+.write('stuff') : writes "stuff" to the file
+.length : counts length of file
+File.exist?(filename) : returns true of false depending on whether  file exists
+*args : astrisks can be used in the parameter to allow any number of arguments to be given
+def : define function
+end : end function
+.seek(0) : rewinds to the beginning of the file after it is .read
+filename.gets : gets first line of file with newline
+filename.gets.chomp
++= : is the same as variable = variable + 1
+return : explicity returns a value. last line of functions are automatically returned
