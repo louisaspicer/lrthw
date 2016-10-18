@@ -55,3 +55,9 @@ filename.gets : gets first line of file with newline
 filename.gets.chomp
 += : is the same as variable = variable + 1
 return : explicity returns a value. last line of functions are automatically returned
+Kernel module : is included by class OBject so its methods are available in every Ruby object
+sprintf : formatting strings using %
+%b : returns binary values
+%d : returns integer values 
+
+
