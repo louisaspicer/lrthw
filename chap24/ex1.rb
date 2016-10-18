@@ -3,6 +3,7 @@ puts 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs
 
 # the <<END is a "heredoc"
 #the <<END to END makes anything inbetween a string.
+#can use any word, not just END, in case string has END in it.
 
 poem = <<END
 \tThe lovely world
