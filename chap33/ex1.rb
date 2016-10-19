@@ -1,4 +1,4 @@
-def while_loop(top)
+def while_loop(top, increment)
   i = 0
   numbers = []
 
@@ -6,7 +6,7 @@ def while_loop(top)
     puts "At the top is i is #{i}"
     numbers << i
 
-    i += 1
+    i += increment
     puts "Numbers now: ", numbers
     puts "At the bottom i is #{i}"
   end
@@ -16,4 +16,4 @@ def while_loop(top)
   numbers.each {|num| puts num }
 end
 
-while_loop(12)
+while_loop(12, 2)
