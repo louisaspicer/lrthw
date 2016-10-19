@@ -13,6 +13,7 @@ def gold_room
 
   if how_much < 50
     puts "Nice, you're not greedy, you win!"
+    #exit(0) means that everything went ok in the program
     exit(0)
   else
     dead("You greedy bastard!")
