@@ -59,5 +59,4 @@ Kernel module : is included by class OBject so its methods are available in ever
 sprintf : formatting strings using %
 %b : returns binary values
 %d : returns integer values 
-
-
+boolean logic : true or false
