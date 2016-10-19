@@ -1,10 +1,9 @@
-def for_loop(starting, ending, increment)
+def for_loop(starting, ending)
   numbers = []
 
   (starting..ending).each do |i|
     puts "Starting number is #{i}"
     numbers << i
-    i += increment
     puts "Numbers now: ", numbers
     puts "Last number is #{i}"
   end
@@ -14,3 +13,5 @@ def for_loop(starting, ending, increment)
   numbers.each {|num| puts num }
 
 end
+
+for_loop(0, 8)
