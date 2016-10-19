@@ -1,10 +1,12 @@
 @prompt = "> "
+
 def gold_room
   puts "This room is full of gold. How much do you take?"
 
   print @prompt
   choice = $stdin.gets.chomp
 
+#if choice matches any number of digits
   if choice =~ /\d+/
     how_much = choice.to_i
   else
@@ -47,6 +49,7 @@ def bear_room
     else
       puts "I got no idea what that means."
     end
+
   end
 end
 
@@ -67,6 +70,7 @@ def cthulhu_room
   else
     cthulhu_room
   end
+
 end
 
 def dead(why)
@@ -91,6 +95,7 @@ def start
   else
     dead("You stumble around the room until you starve.")
   end
+
 end
 
 start
