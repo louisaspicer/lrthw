@@ -1,7 +1,8 @@
+@prompt = "> "
 def gold_room
   puts "This room is full of gold. How much do you take?"
 
-  print "> "
+  print @prompt
   choice = $stdin.gets.chomp
 
   if choice =~ /\d+/
@@ -27,18 +28,20 @@ def bear_room
   """
   bear_moved = false
 
-  while true
-    print "> "
+  while true #this keeps looping, until one of the options breaks out of it,
+    #as you will see in all of the other functions, there is an exit(0)
+    print @prompt
     choice = $stdin.gets.chomp
 
-    if choice == "take honey"
+    if choice.include? "honey"
       dead("The bear looks at you then slaps your face off.")
-    elsif choice == "taunt bear" && !bear_moved
+    elsif choice.include? "taunt" && !bear_moved # AND bear_moved is NOT true
       puts "The bear has moved from the door. You can go through it now."
-      bear_moved = true
-    elsif choice == "taunt bear" && bear_moved
+      bear_moved = true #this changes the variable value to true, so now if
+      #the user types 'taunt bear' again, it will go to the below choice
+    elsif choice.include? "honey" && bear_moved #bear_moved is true
       dead("The bear gets pissed off and chews your leg off.")
-    elsif choice == "open door" && bear_moved
+    elsif choice.include? "door" && bear_moved
       gold_room
     else
       puts "I got no idea what that means."
@@ -53,7 +56,7 @@ def cthulhu_room
   Do you flee for your life or eat you head?
   """
 
-  print "> "
+  print @prompt
   choice = $stdin.gets.chomp
 
   if choice.include? "flee"
@@ -77,7 +80,7 @@ def start
   Which one do you take?
   """
 
-  print "> "
+  print @prompt
   choice = $stdin.gets.chomp
 
   if choice == "left"
