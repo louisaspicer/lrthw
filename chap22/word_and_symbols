@@ -65,4 +65,10 @@ while-loop : a while loop will keep executing the code block under it as long as
 if-statements : if something is true then it will run the code, if not, it will move onto the next piece of code
 { } : same as do and end for loop blocks of code
 cardinal number : first element is always 0
-
+exit(0) : means that everything went ok in the program - different numbers mean different things. the number is the return value of the program
+=~ : equal-tilde operator in ruby is the “match” operator.
+=~ /\d+/ : / denotes the start of a regular expression and \d+ means match one or more digits
+\A is known as an "anchor" and is saying "match from the beginning of the string."
+\w matches any digit, alphabetical character, or underscore (_).
+\s matches any whitespace character (space, tab, newline).
+/\D/ matches any character that is not a digit
