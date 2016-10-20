@@ -7,6 +7,10 @@ class Song
 	def sing_me_a_song
 		@lyrics.each {|line| puts line}
 	end
+
+  def join_lyrics(inbetween)
+    puts @lyrics.join(inbetween)
+  end
 end
 
 lyrics_one = ["Hello",
@@ -24,3 +28,5 @@ hello_from_otherside = Song.new(lyrics_two)
 hello_its_me.sing_me_a_song
 puts '-' * 10
 hello_from_otherside.sing_me_a_song
+puts '-' * 10
+hello_its_me.join_lyrics(", ")
