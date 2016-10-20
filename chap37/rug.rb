@@ -17,13 +17,13 @@ def rug
 		puts "But you can't see through it. Looks like something fits in it."
 		puts "Nothing else is around. You walk back to the room you were in before."
 		begin_game
-  elsif
-    north_room_door
-	elsif answer == "no"
+
+	elsif answer.include? "no"
 		puts "How will you ever know what's behind that door?"
 		puts "Nothing else is around, so you walk back to the room you were in before."
-	else
-		puts "Please say yes or no"
+    start_again
+  else
+    puts "Please say yes or no"
 	end
 
 end

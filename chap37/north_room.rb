@@ -1,12 +1,17 @@
-def north_room
-	prompt = "> "
-	puts "You have entered Door 1."
-	puts "To your left there is a wardrobe."
-	puts "There is a rug in front of you."
+def enter_room
+
+	puts "You are in the North room."
+	puts "There is a wardrobe."
+	puts "And a rug in front of you."
 	puts "Further ahead there is another door."
 	puts "What would you like to do?"
+	north_room
 
-	print prompt
+end
+
+def north_room
+
+	print "> "
 	choice = $stdin.gets.chomp.downcase
 
 	if choice.include?("rug")
@@ -26,7 +31,30 @@ def north_room
     puts "You take out the cube block you picked up and try it in the door"
     puts "It fits perfectly and the door opens."
     north_room_door
+	elsif choice.include?("wardrobe")
+		puts """
+		There's a suit jacket in here. With a note in the pocket.
+		You take the note, and read it.
+		It says 'Square shapes are more than they seem'
+		You put the note back into the pocket.
+		You're cold so you put the jacket on.
+		Would you like to do anything else in this room?
+		"""
+		@suit_jacket = true
+		another_choice = $stdin.gets.chomp
+
+		  if another_choice == "yes"
+				enter_room
+			elsif another_choice == "no"
+				puts "You walk back out the room"
+				start_again
+			else
+				puts "You walk back out the room"
+				start_again
+			end
+
 	else
-		begin_game
+		puts "Nothing here of interest then. You walk back out"
+		start_again
 	end
 end
