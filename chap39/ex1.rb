@@ -56,11 +56,15 @@ puts '-' * 10
 # by default ruby says "nil" when something isn't in there
 state = states['Texas']
 
+#if state is false (nil) then put the following.
 if !state
   puts "Sorry, no Texas."
 end
 
-# default vales using ||= with the nil result
+# default values using ||= with the nil result
 city = cities['TX']
+# puts city unless it does not exist then put 'Does not exist'
+#  if a is defined and evaluates to true, then the right hand side of the
+# operator is not evaluated, and no assignment takes place. T
 city ||= 'Does Not Exist'
 puts "The city for the state 'TX' is: #{city}"

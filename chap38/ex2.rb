@@ -2,5 +2,5 @@ dvd_collection = ["sunshine of the spotless mind", "dude wheres my car", "someth
 
 with_index = dvd_collection.each_with_index {|dvd, index| puts "#{index}: #{dvd}"}
 
-puts dvd_collection.join(' ').split(' ').map(&:capitalize).join(' ')
+puts dvd_collection.join(' ').split(' ').map(&:capitalize)
 puts dvd_collection.join(" + ")

@@ -80,14 +80,12 @@ begin : Start a block, usually for exceptions.
 exceptions : if an error is caused, protect against these errors with exceptions
 break : Break out of a loop right now.
 case : 
-class
-def
-defined?
-do
-else
-elsif
-end
-ensure
-for 
-if
+defined? :
+hash : is used to map or associate things you want to store to keys you need to get them
+||= : city ||= ‘Does Not Exist” - default values using ||= with the nil result
+a ||= b
+is a "conditional assignment operator". It is sort-of-but-not-quite(*) shorthand for a || a = b.
+
+It means "if a is false, nil or undefined, then evaluate b and set a to the result".
+hash : - set default value also by sending it to new e.g. grades = Hash.new(0) - so if the value does not exist it will return 0
 
