@@ -17,14 +17,16 @@ choices << door_choice
 
 puts "You chose #{door_choice}."
 
-  if door_choice == "north"
-	north_room
-  else door_choice == "east"
-	#call a method here which does everything needed in this room.
-	puts "You have entered Door 2"
-	puts "There is a chest of drawers to your right."
-	puts "One of the drawers is open"
-	puts "There is nothing else in the room"
-	puts "What would you like to do?"
+  if choices.any? { |i| ["north", "1"].include? i }
+	  north_room
+  elsif choices.any? {|i| ["east", "2"].include? i }
+	  east_room
+  elsif choices.any? {|i| ["south", "3"].include? i }
+    south_room
+  elsif choices.any? {|i| ["west", "4"].include? i }
+    west_room
+  else
+    puts "Sorry, please pick a door"
   end
+
 end

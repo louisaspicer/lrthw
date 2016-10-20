@@ -5,3 +5,4 @@
 - create an ending - dieing off or winning game - finding treasure
 - collect something from each room to access something in one of the rooms
 - write out english comments in source file as a guide
+- create north_room_door module
