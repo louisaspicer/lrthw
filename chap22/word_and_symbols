@@ -72,3 +72,22 @@ exit(0) : means that everything went ok in the program - different numbers mean 
 \w matches any digit, alphabetical character, or underscore (_).
 \s matches any whitespace character (space, tab, newline).
 /\D/ matches any character that is not a digit
+BEGIN : run this block when the script starts
+END : run this block when the script is done
+alias : create another name for a function, alias new name old name
+and : Logical and, but lower priority than &&.
+begin : Start a block, usually for exceptions.
+exceptions : if an error is caused, protect against these errors with exceptions
+break : Break out of a loop right now.
+case : 
+class
+def
+defined?
+do
+else
+elsif
+end
+ensure
+for 
+if
+
