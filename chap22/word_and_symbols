@@ -89,3 +89,5 @@ is a "conditional assignment operator". It is sort-of-but-not-quite(*) shorthand
 It means "if a is false, nil or undefined, then evaluate b and set a to the result".
 hash : - set default value also by sending it to new e.g. grades = Hash.new(0) - so if the value does not exist it will return 0
 
+attribute : a property class have that are from composition and are usually variables
+
