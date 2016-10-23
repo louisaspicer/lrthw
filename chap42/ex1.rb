@@ -1,8 +1,16 @@
 ## Animal is-a object look at the extra credit
 class Animal
 
-  def initialize(name)
+  def initialize(name, actions)
     @name = name
+    @actions = nil
+  end
+
+  attr_accessor :name :actions
+
+  def action
+    puts "#{name} does #{actions}"
+  end
 end
 
 ## Dog is-a Animal
@@ -11,7 +19,7 @@ class Dog < Animal
   def initialize(name)
    ## Dog has-a name
    super(name)
-   
+
   end
 
 end
@@ -55,6 +63,13 @@ end
 
 ## Fish is-a object
 class Fish
+
+  def initialize(home)
+    @home = home
+  end
+
+  attr_accessor :home
+
 end
 
 ## Salmon is-a Fish
